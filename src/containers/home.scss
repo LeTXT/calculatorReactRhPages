@@ -1,0 +1,35 @@
+@use '../abstracts/' as *;
+
+html, body {
+    width: 100vw;
+    height: 100lvh;
+
+    margin: 0;
+    padding: 0;
+
+    box-sizing: border-box;
+
+    background-color: $light-beige;
+}
+
+.homeContainer {
+    @include flex(column);
+
+    width: 100%;
+    height: 100lvh;
+
+    .calculatorContainer {
+        @include flex(column);
+        @include border();
+    
+        max-width: 364px;
+        width: 100%;
+    
+        margin: auto;
+    
+        background-color: $light-beige;
+    
+        box-shadow: 4px 4px 0 0 $dark-grey;
+    }
+}
+
